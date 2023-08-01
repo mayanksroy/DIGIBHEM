@@ -9,9 +9,8 @@ root=Tk()
 root.title("Text To Speech App using Python")
 root.geometry("900x450")
 root.resizable(False,False)
-root.config
+root.config(bg="#999999")
 
-image_icon=PhotoImage(file="")
-root.iconphoto(False,image_icon)
+
 
 root.mainloop()
