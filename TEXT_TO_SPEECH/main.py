@@ -39,13 +39,8 @@ def speaknow():
             engine.setProperty('rate',60)
             setvoice()
               
-    
-    
-    
 def download():
     print(text_area)
-
-
 
 image_icon = PhotoImage(file=r"TEXT_TO_SPEECH\icon.png")
 root.iconphoto(False, image_icon)
