@@ -8,15 +8,13 @@ Key Features:
 
 🗣️ Speech Synthesis: The core functionality of the application lies in the speech synthesis process. Python offers several libraries and APIs to achieve this, such as pyttsx3, gTTS, and espeak. The selected library should have different voices and parameters to control pitch, speed, volume, etc.
 
-🎭 Voice Selection: Users may prefer different voices for the synthesized speech. The application should provide options for users to select from a list of available voices. Some TTS libraries offer various voice options, including different accents and languages.
-
-🔈 Audio Output: The application should be capable of playing the generated speech directly through the computer's speakers or headphones. 
+🔈 Audio Output: The application should be capable of playing the generated speech directly through the computer's speakers or headphones. Alternatively, it may provide an option to save the speech as an audio file in popular formats like MP3.
 
 🚦 Error Handling: The application should handle potential errors gracefully, providing appropriate feedback to the user in case of invalid input or any issues during speech synthesis.
 
-⏩ Speed Control: It may be useful to allow users to control the speed of speech  in the text to enhance the listening experience.
+⏩ Speed Control: It may be useful to allow users to control the speed of speech in the text to enhance the listening experience.
 
-🖥️ Graphical User Interface (Optional): To make the application more user-friendly, a graphical user interface (GUI) can be implemented using libraries like Tkinter or PyQt. The GUI may include text input boxes, voice selection menus, play/pause buttons, and other relevant controls.
+🖥️ Graphical User Interface: To make the application more user-friendly, a graphical user interface (GUI) can be implemented using libraries like Tkinter or PyQt. The GUI may include text input boxes, voice selection menus, play/pause buttons, and other relevant controls.
 
 🔄 Integration with Other Applications: Depending on the use case, the TTS application could be integrated with other programs or services. For instance, it could be used as a voice output component in a chatbot or as a narration feature for an e-learning platform.
 
