@@ -49,9 +49,12 @@ Top_frame = Frame(root, bg="white", width=900, height=115)
 Top_frame.place(x=0, y=0)
 
 Logo=PhotoImage(file=r"TEXT_TO_SPEECH\icon1.png")
-Label(Top_frame, image=Logo, bg="white").place(x=20, y=5)
+Label(Top_frame, image=Logo, bg="white").place(x=10, y=5)
 
-Label(Top_frame, text="TEXT TO SPEECH", font="Ariel 20 bold italic", bg="white", fg="black").place(x=150, y=40)
+Logo2=PhotoImage(file=r"TEXT_TO_SPEECH\icon1.png")
+Label(Top_frame, image=Logo, bg="white").place(x=780, y=5)
+
+Label(Top_frame, text="TEXT TO SPEECH APPLICATION", font="Comic-Sans-MS 25 bold", bg="white", fg="black").place(x=180, y=35)
 
 text_area=Text(root, font="Robote 15", bg="white", fg="black", relief=GROOVE, wrap=WORD)
 text_area.place(x=30, y=160, width=500, height=250)
