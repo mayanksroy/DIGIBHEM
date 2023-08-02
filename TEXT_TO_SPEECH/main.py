@@ -40,7 +40,34 @@ def speaknow():
             setvoice()
               
 def download():
-    print(text_area)
+    text=text_area.get(1.0, END)
+    gender = gender_combobox.get()
+    speed = speed_combobox.get()
+    voices = engine.getProperty('voices')
+    
+    def setvoice():
+        if(gender == 'Male'):
+            engine.setProperty('voice', voices[0].id)
+            path=filedialog.askdirectory()
+            os.chdir(path)
+            engine.save_to_file(text, 'audio_to_text.mp3')
+            engine.runAndWait()
+        else:
+            engine.setProperty('voice', voices[1].id)
+            path=filedialog.askdirectory()
+            os.chdir(path)
+            engine.save_to_file(text, 'audio_to_text.mp3')
+            engine.runAndWait()
+    if(text):
+        if(speed == 'Fast'):
+            engine.setProperty('rate',250)
+            setvoice()
+        elif(speed == 'Normal'):
+            engine.setProperty('rate',150)
+            setvoice()
+        else:
+            engine.setProperty('rate',60)
+            setvoice()
 
 image_icon = PhotoImage(file=r"TEXT_TO_SPEECH\icon.png")
 root.iconphoto(False, image_icon)
